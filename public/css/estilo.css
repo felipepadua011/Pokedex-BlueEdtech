@@ -1,0 +1,98 @@
+body {
+    background-image: "public\img\fundo-abstrato-colorido_23-2148807053.webp";
+}
+
+h1 {
+    color: red;
+} 
+.nomee {
+    display: flex; 
+    justify-content: center; 
+    color: black;
+}
+.tipoo {
+    display: flex; 
+    justify-content: center; 
+    color: black;
+}
+.imagee { 
+    display: flex; 
+    justify-content: center; 
+    border: 2px solid black;
+}
+.cada {
+    color: red;
+}
+.sucesso { 
+    color: red; 
+}
+.container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+}
+.botao {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#cadastro { 
+    color: red;
+}
+
+#detalhes {
+    color: red;
+}
+
+#cadas {
+    color: red;
+    width: 500px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+#detail {
+    background-color: white;
+    color: red;
+    margin-left: 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+#titulo {
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(224, 224, 224);
+    color: #004d04;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+  
+span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+}
