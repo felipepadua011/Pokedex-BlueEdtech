@@ -26,7 +26,7 @@ app.post("/", function (req, res) {
 })
 
 app.get("/detalhes", function (req, res) {
-    res.render("detalhes", { det: "cadastro dos Pokemons" });
+    res.render("detalhes", { det: "Cadastro dos Pokemons" });
 });
 
 app.get("/cadastro", function (req, res) {

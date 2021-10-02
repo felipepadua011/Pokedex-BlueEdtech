@@ -1,24 +1,53 @@
 body {
-    background-image: "public\img\fundo-abstrato-colorido_23-2148807053.webp";
+    background-image: "/img/002.jpg";
 }
-
+#tudoo { 
+    background-image: "/img/002.jpg";
+}
 h1 {
     color: red;
 } 
+#poke { 
+    display: flex;
+    flex-wrap: wrap;
+}
 .nomee {
     display: flex; 
-    justify-content: center; 
+    justify-content: flex-start; 
     color: black;
+    margin: 20px; 
+    padding: 5px;
 }
 .tipoo {
     display: flex; 
-    justify-content: center; 
+    justify-content: flex-start; 
     color: black;
+    margin: 20px; 
+    padding: 5px;
+}
+.numeroo {
+    display: flex; 
+    justify-content: flex-start; 
+    color: black;
+    margin: 20px; 
+    padding: 5px;
+}
+.tipooo {
+    background-color: red;
+    display: flex; 
+    justify-content: flex-start;
+    margin: 20px; 
+    color: white;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    height: 20px;
 }
 .imagee { 
     display: flex; 
-    justify-content: center; 
+    justify-content: center;
     border: 2px solid black;
+    margin: 20px; 
 }
 .cada {
     color: red;
@@ -33,11 +62,11 @@ h1 {
     justify-content: flex-start; 
 }
 .botao {
-
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
+
 #cadastro { 
     color: red;
 }
@@ -46,20 +75,28 @@ h1 {
     color: red;
 }
 
-#cadas {
-    color: red;
-    width: 500px;
+#home {
+    background-color: red;
+    color: white;
+    margin-left: 20px;
     border: 2px solid red;
     display: flex;
     justify-content: flex-end;
+    border-radius: 10px;
+    padding: 5px;
 }
 #detail {
-    background-color: white;
-    color: red;
+    background-color: red;
+    color: white;
     margin-left: 100px;
     border: 2px solid red;
     display: flex;
     justify-content: flex-end;
+    border-radius: 10px;
+    padding: 5px;
+}
+a:hover {
+    background-color:rgb(246, 143, 143);
 }
 #titulo {
     color: red;

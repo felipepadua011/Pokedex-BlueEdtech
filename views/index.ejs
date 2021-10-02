@@ -8,33 +8,35 @@
         <title>Pokedéx</title>
     </head>
     <body>
-        <section class="container">
-            <h1> 
-                <a id="titulo" href="/"></a>Pokedéx</a>
-            </h1>
+        <article id="tudoo">
+            <section class="container">
+                <h1> 
+                    <a id="titulo" href="/"></a>Pokedéx</a>
+                </h1>
             
-        </section>
-        <section class="botao">
-            <a id="detail" href="/cadastro">Cadastro</a>
-            <a id="home" href="/">Home</a>
-        </section>
+            </section>
+            <section class="botao">
+                <a id="detail" href="/cadastro">Cadastro</a>
+                <a id="home" href="/">Home</a>
+            </section>
         
 
-        <% if(message != ""){ %>
-        <section id="message">
-            <p class="sucesso">Pokemon cadastrado com sucesso!</p> <span id="close">&times;</span>
-        </section>
-        <% } %>
+            <% if(message != ""){ %>
+            <section id="message">
+                <p class="sucesso">Pokemon cadastrado com sucesso!</p>      <span id="close">&times;</span>
+            </section>
+            <% } %>
         
-
-        <% listaprincipal.forEach(item => { %>
-        <img src="<%= item.imagem %>" width="330" height="400" alt="imagem1" class="imagee">  
-         
-        <p class="nomee">Nome: <%= item.nome %></p>
-        <p class="tipoo">Tipo: <%= item.tipo %></p>
-        <% }) %> 
-        <a class="tipoo" href="/detalhes">Ver detalhes</a>
-
+            <div id="poke">
+                <% listaprincipal.forEach(item => { %>
+                <img class="imagee" src="<%= item.imagem %>" width="250" height="250" alt="imagem1" >
+                <p class="numeroo">Número: <%= item.numero %></p> 
+                <p class="nomee">Nome: <%= item.nome %> <br> </p> 
+                <p class="tipoo">Tipo: <%= item.tipo %> <br> </p>
+                <a class="tipooo" href="/detalhes">Ver Detalhes</a>
+                <% }) %> 
+            </div>
+        </article>
         
 
         <script src="/js/script.js"></script>
