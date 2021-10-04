@@ -16,7 +16,7 @@
             
             </section>
             <section class="botao">
-                <a id="detail" href="/cadastro">Cadastro</a>
+                <a id="detail" href="/new">Cadastro</a>
                 <a id="home" href="/">Home</a>
             </section>
         
@@ -27,15 +27,17 @@
             </section>
             <% } %>
         
-            <div id="poke">
-                <% listaprincipal.forEach(item => { %>
-                <img class="imagee" src="<%= item.imagem %>" width="250" height="250" alt="imagem1" >
-                <p class="numeroo">Número: <%= item.numero %></p> 
-                <p class="nomee">Nome: <%= item.nome %> <br> </p> 
-                <p class="tipoo">Tipo: <%= item.tipo %> <br> </p>
-                <a class="tipooo" href="/detalhes">Ver Detalhes</a>
+            <section id="poke">
+                <% listaprincipal.forEach((item, id) => { %>
+                <ul> 
+                    <div><img class="imagee" src="<%= item.imagem %>" width="250" height="250" alt="imagem1"></div>
+                    <div><p class="numeroo"><strong>Número: </strong> <%= item.numero %></p></div> 
+                    <div><p class="nomee"><strong>Nome: </strong> <%= item.nome %> <br> </p></div> 
+                    <div><p class="tipoo"><strong>Tipo: </strong> <%= item.tipo %> <br> </p></div>
+                    <div><a class="tipooo" href="/detalhes/<%=id%>">Ver Detalhes</a></div>
+                </ul>
                 <% }) %> 
-            </div>
+            </section>
         </article>
         
 

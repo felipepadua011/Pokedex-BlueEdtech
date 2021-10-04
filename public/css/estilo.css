@@ -1,16 +1,69 @@
-body {
-    background-image: "/img/002.jpg";
+body { 
+    margin: 0px;
+    background-image: url("https://thumbs.dreamstime.com/b/cinza-abstrato-fundo-de-papel-amarrotado-da-textura-122002425.jpg");
 }
-#tudoo { 
-    background-image: "/img/002.jpg";
+#pokemo {
+     display: flex; 
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px; 
+}
+#pokem { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#pokem ul {
+    background-color: white;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 h1 {
     color: red;
 } 
-#poke { 
+
+#poke {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
+
+#poke ul li {
+    padding: 5px;
+}
+
+#poke ul {
+    background-color: white;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#poke ul li {
+    padding: 5px;
+}
+
+#pokeul li img{
+    height: 200px;
+    width: 200px;
+}
+
 .nomee {
     display: flex; 
     justify-content: flex-start; 
@@ -47,6 +100,7 @@ h1 {
     display: flex; 
     justify-content: center;
     border: 2px solid black;
+    border-radius: 10px;
     margin: 20px; 
 }
 .cada {
@@ -107,7 +161,7 @@ a:hover {
 
 section#message {
     padding: 1.5rem;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(221, 177, 177);
     color: #004d04;
     position: fixed;
     top: 3rem;

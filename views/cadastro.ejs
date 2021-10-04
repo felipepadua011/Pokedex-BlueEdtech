@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
-    <title>Detalhes Pokedéx</title>
+    <title>Pokedéx</title>
 </head>
 <body>
     <h1 id="detalhes"><%= det %></h1>
@@ -34,17 +34,17 @@
 
         <div>
             <label for="altura">Altura: </label>
-            <input type="number" name="altura" id="altura" placeholder="Digite a altura do pokemon" required>
+            <input type="text" name="altura" id="altura" placeholder="Digite a altura do pokemon" required>
         </div>
 
         <div>
             <label for="peso">Peso: </label>
-            <input type="number" name="peso" id="peso" placeholder="Digite o tipo do pokemon" required>
+            <input type="text" name="peso" id="peso" placeholder="Digite o tipo do pokemon" required>
         </div>
 
         <div>
-            <label for="genero">Genero: </label>
-            <input type="text" name="genero" id="genero" placeholder="Digite o gênero do pokemon" required>
+            <label for="descricao">Descrição: </label>
+            <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição do pokemon" required>
         </div>
 
         <div>
@@ -56,15 +56,6 @@
             <input type="text" name="habilidades" id="habilidades" placeholder="Digite as habilidades do pokemon" required>
         </div>
 
-        <div>
-            <label for="modelo">Modelo: </label>
-            <input type="text" name="modelo" id="modelo" placeholder="Digite o modelo do pokemon" required> 
-        </div>
-
-        <div>
-            <label for="fraquezas">Fraquezas: </label>
-            <input type="text" name="fraquezas" id="fraquezas"  placeholder="Digite as fraquezas do pokemon" required>
-        </div>
         <button type="submit">Cadastrar Pokemon</button>
     </form>
     <script src="/js/script.js"></script>
